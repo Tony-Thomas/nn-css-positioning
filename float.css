@@ -1,0 +1,104 @@
+/* Floating is one the most used techniques in page layout for postioning content */
+
+
+
+/* margin-auto positions element in the center
+**********************************************/
+.wrapper {
+    background: #fff;
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Floating Elements
+********************
+
+img {
+    //float: left;
+    //float: right;
+    margin: 10px;
+}*/
+
+/* Floating Elements 2
+*********************
+
+.box {
+    height: 100px;
+    width: 100px;
+}
+.blue-box {
+    background: blue;
+    float: right;
+}
+
+.red-box {
+    background: red;
+    //float: left;
+    float: right;
+    margin-left: 10px;
+}
+
+.green-box {
+    background: green;
+    float: left;
+}*/
+
+/* Clearing Floats
+*******************/
+
+.service h2, .service p {
+    color: #999;
+    margin: 10px;
+    text-align: center;
+}
+
+.service {
+    float: left;
+    background: #eee;
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+}
+/* Use these styles to clear floats.
+[::after] is a generated content element that
+represents a styleable abstract last child of
+the respective element.
+**********************************************/
+.services::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    padding: 10px;
+    clear: left;
+    margin: 20px 1%
+    //background: #ccc;
+    //clear: both;
+    //clear: right;
+    //margin-top: 50px;
+    //margin: 20px;
+}
+
+section, aside {
+    float: left;
+    width: 46%;
+    padding: 1%;
+    margin: 1%;
+    background: #f2f2f2;
+}
+
+.columns::after {
+    display: block;
+    content: "";
+    clear: both;
+}
