@@ -66,7 +66,21 @@ img {
     margin: 1%;
     padding: 1%;
     height: 140px;
+    position: relative;
 }
+
+.service:nth-child(1) {
+    top: 10px;
+}
+
+.service:nth-child(2) {
+    top: 20px;
+}
+
+.service:nth-child(3) {
+    bottom: 10px;
+}
+
 /* Use these styles to clear floats.
 [::after] is a generated content element that
 represents a styleable abstract last child of
@@ -77,11 +91,20 @@ the respective element.
     display: block;
     clear: both;
 }
-
+/* Directional properties work becuase the
+relative property us present. Relative property
+does not remove element from normal document flow.
+Just offsetting it visually.
+***************************************************/
 .content {
     padding: 10px;
     clear: left;
-    margin: 20px 1%
+    margin: 20px 1%;
+    //position:relative;
+    //left: 50px;
+    //right: 50px;
+    //top: 50px;
+    //bottom: 50px;
     //background: #ccc;
     //clear: both;
     //clear: right;
