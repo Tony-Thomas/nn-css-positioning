@@ -18,16 +18,16 @@
 }
 
 /* Floating Elements
-********************
+*********************/
 
 img {
     //float: left;
-    //float: right;
+    float: right;
     margin: 10px;
-}*/
+}
 
 /* Floating Elements 2
-*********************
+**********************/
 
 .box {
     height: 100px;
@@ -48,7 +48,7 @@ img {
 .green-box {
     background: green;
     float: left;
-}*/
+}
 
 /* Clearing Floats
 *******************/
@@ -137,4 +137,26 @@ section, aside {
     display: block;
     content: "";
     clear: both;
+}
+
+#banner img {
+    margin: 0;
+}
+
+#banner {
+    max-height: 300px;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+}
+
+#banner h2 {
+    position: absolute;
+    bottom: 10%;
+    //left: 0;
+    margin:0;
+    width: 100%;
+    text-align: center;
+    color: red;
+    font-size: 60px;
 }
