@@ -160,3 +160,32 @@ section, aside {
     color: red;
     font-size: 60px;
 }
+/* [position-fixed, top, left, width] pulled navbar
+from bottom of screen and placed it at the top on
+top of other elements and is uneffected by scrolling.
+****************************************************/
+
+nav {
+    background: #333;
+    //padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Had to clear [ul] or else the [nav li]
+would collapse after [li] were floated
+*************************************/
+nav ul::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 0 10px;
+    color: #fff;
+    float: right;
+}
