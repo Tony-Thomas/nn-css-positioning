@@ -78,7 +78,16 @@ img {
 }
 
 .service:nth-child(3) {
-    bottom: 10px;
+    top: 30px;
+}
+
+/* [overflow: auto] will add scroll bar to overdflowing content
+[overflow: hidden] will clip the bottom of edge of overfloing content
+[]
+.services {
+    max-height: 150px;
+    //overflow: auto;
+    overflow: hidden;
 }
 
 /* Use these styles to clear floats.
@@ -167,7 +176,9 @@ top of other elements and is uneffected by scrolling.
 
 /* z-index only works on positioned elements.
 0 is base level, and every digit higher is a one
-level on top of the other.
+level on top of the other. [z-index] also is
+only in relation to other elements within the
+same wrapper/container.
 *********************************************/
 nav {
     background: #333;
